@@ -1,0 +1,17 @@
+import React from 'react'
+import TextField from 'material-ui/TextField'
+import Grid from 'material-ui/Grid'
+import Button from 'material-ui/Button'
+import './index.css'
+const LoginModel = ({ that, oct, enter }) =>(
+	<Grid container alignItems="center" justify="center" direction="column"
+		  alignContent="center" style={{height:'100%',display:'flex',flex:1}}>
+		<TextField id="name" label="Name" value={that.state.name}
+				   margin="normal" onChange={ e => {oct(e.target.value, 'name')}}/>		
+		<TextField id="group" label="Group" value={that.state.group}
+				   margin="normal" onChange={ e => {oct(e.target.value, 'group')}}/>
+		<Button onClick={enter} style={{marginTop:30}} variant="raised" color="primary" >Enter</Button>
+	</Grid>
+)
+
+export default LoginModel

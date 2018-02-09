@@ -1,0 +1,12 @@
+#mine-bg{
+    background-image: url('/imgs/mine/bg2.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    height:100vh;
+}
+
+.icwrap{
+	display:flex;
+	align-item:center;
+	justify-content:center;
+}

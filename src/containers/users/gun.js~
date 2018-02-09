@@ -1,0 +1,32 @@
+import Gun from 'gun'
+const gun = Gun(['http://106.14.205.225:8080/gun'])
+
+
+const check = ( ) => {
+	gun.get('mine',(atk)=>{
+		if(atk.put.totalMined === 0){
+			console.log('000')
+			nonce()			
+		}else{
+			console.log('111')
+			mine()
+		}
+	})
+}
+
+const nonce = () =>{
+	gun.get('mine').put({totalMined:1},(ack)=>{
+		console.log(ack)
+	})
+}
+
+const mine = () =>{
+	gun.get('mine').get('totalMined',(atk)=>{
+		console.log(atk)
+	})
+}
+
+check()
+
+
+export const ttMined = 99

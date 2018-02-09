@@ -1,0 +1,16 @@
+#lg-bg{
+	background-image: url('/imgs/login/bg.png');
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	height:100vh;
+}
+
+#lg-btn{
+	max-width: 100%;
+	display: block
+}
+
+img{
+	width:48;
+	height:48
+}

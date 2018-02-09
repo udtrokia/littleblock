@@ -1,0 +1,15 @@
+import React from 'react'
+import TextField from 'material-ui/TextField'
+import Grid from 'material-ui/Grid'
+import Button from 'material-ui/Button'
+import './index.css'
+const HomeModel = () =>(
+	<Grid container alignItems="center" justify="center" direction="column"
+		  alignContent="center" style={{height:'100%',display:'flex',flex:1}}>
+		<TextField id="name" label="Name" margin="normal" />
+		<Button style={{marginTop:30}} variant="raised" color="primary" >Login!</Button>
+	</Grid>
+)
+
+export default HomeModel
+
